@@ -518,7 +518,7 @@ class Comment extends \yii\db\ActiveRecord
         return $this->user->{\Yii::$app->getModule('comments')->userEmailField};
     }
 
-    public function isNew()
+    public function isNew($id = false)
     {
         if (false === $id) {
           return false;
